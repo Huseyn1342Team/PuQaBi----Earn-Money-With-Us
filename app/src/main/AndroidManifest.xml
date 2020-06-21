@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onethreefourtwo.puqabi">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/puqabiloqo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/puqabiloqo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Change"></activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".profil" />
+        <activity android:name=".Chat" />
+        <activity android:name=".Submit_task" />
+        <activity android:name=".Payment" />
+        <activity android:name=".FirstMainActivity" />
+        <activity android:name=".Activity_2" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

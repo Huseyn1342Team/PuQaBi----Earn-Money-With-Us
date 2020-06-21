@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".Change">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/change_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/image1"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Change Your Information"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:fontFamily="@font/alfa_slab_one" />
+
+    <RelativeLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text1"
+        tools:visibility="gone">
+
+        <EditText
+            android:id="@+id/passforemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/loginedittext"
+            android:drawableLeft="@drawable/pass"
+            android:hint="Write your password here!" />
+
+        <EditText
+            android:id="@+id/newmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/passforemail"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/loginedittext"
+            android:drawableLeft="@drawable/mail5"
+            android:hint="Write your new mail here! " />
+
+        <Button
+            android:id="@+id/submitmail"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/newmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/loginbutton"
+            android:text="Submit"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text1"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/newname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/loginedittext"
+            android:drawableLeft="@drawable/name"
+            android:hint="Write your new name here!" />
+
+        <Button
+            android:id="@+id/submitname"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/newname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/loginbutton"
+            android:text="Submit"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text1"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/oldpass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/loginedittext"
+            android:drawableLeft="@drawable/pass"
+            android:hint="Write your old password!" />
+
+        <EditText
+            android:id="@+id/newpass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/oldpass"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/loginedittext"
+            android:drawableLeft="@drawable/pass"
+            android:hint="Write your new password!" />
+
+        <Button
+            android:id="@+id/submitpass"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/newpass"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/loginbutton"
+            android:text="Submit"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

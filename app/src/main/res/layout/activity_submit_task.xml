@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1d1d1"
+    tools:context=".Submit_task">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/uploadimage"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/image1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Upload a photo of your project."
+            android:layout_below="@id/image1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text"/>
+
+        
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/rel1"
+        android:id="@+id/details"
+        android:text="In this section, you must upload picture of task which you done. Example, if your task is publishing about us in Facebook, you must upload a photo of post."
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/details"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/loginedittext"
+        android:drawableLeft="@drawable/name"
+        android:drawingCacheQuality="high"
+        android:hint="Write your name and surname"
+        android:inputType="text" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/loginbutton"
+        android:layout_below="@id/detail"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:textSize="23sp"
+        android:id="@+id/submit"/>
+
+
+</RelativeLayout>

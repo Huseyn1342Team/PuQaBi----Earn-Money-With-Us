@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/registerbackground">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/loginlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/image1"
+        android:src="@drawable/loqo2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Register"
+        android:id="@+id/text1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="39sp"
+        app:fontFamily="@font/abril_fatface" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/loginedittext"
+        android:drawableLeft="@drawable/mail5"
+        android:drawingCacheQuality="high"
+        android:hint="Write your email" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/loginedittext"
+        android:drawableLeft="@drawable/pass"
+        android:drawingCacheQuality="high"
+        android:hint="Write your password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/pass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/loginedittext"
+        android:drawableLeft="@drawable/name"
+        android:drawingCacheQuality="high"
+        android:hint="Write your name and surname"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:text="I have got account. Log in."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/loginbutton"
+        android:layout_below="@id/register"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/submit"/>
+
+</RelativeLayout>

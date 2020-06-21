@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:id="@+id/image1_2"
+        android:paddingBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/splashloqo"
+        android:layout_marginTop="120dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="PuQaBi"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:fontFamily="@font/nosifer" />
+
+    <TextView
+        android:id="@+id/text2_2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="If you want to earn,join us!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:fontFamily="@font/alfa_slab_one" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Produced by 1342 Team."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/image1"
+        android:paddingBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/splashloqo"
+        android:layout_marginTop="120dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="PuQaBi"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:fontFamily="@font/nosifer" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="If you want to earn,join us!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:fontFamily="@font/alfa_slab_one" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Produced by 1342 Team."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
